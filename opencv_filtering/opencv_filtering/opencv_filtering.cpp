@@ -19,13 +19,11 @@ using namespace cv;
 
 using namespace std;
 
-int n=0;
-double mask[9][9];
-double mul[9][9];
-double total = 0;
-
 int main(int argc, char** argv)
 {
+	int n = 0;
+	double total = 0;
+
 	// Put your image file here
 	string imageName("../data/happyDog.jpg");
 	if (argc > 1) {
@@ -47,14 +45,7 @@ int main(int argc, char** argv)
 			printf("Please input the odd number from 1 to 9.\n");
 	}
 
-	// Set the mask's given range to 1
-	for (int x = 0; x < n; x++) {
-		for (int y = 0; y < n; y++) {
-			mask[x][y] = 1;
-		}
-	}
-
-	// Smoothing filters
+	// Average smoothing filters
 	for (int y = 0; y < image.rows; y++) {
 		for (int x = 0; x < image.cols; x++) {
 			total = 0;
