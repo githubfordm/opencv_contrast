@@ -8,4 +8,5 @@ opencv_histogram : Manipulate the image via histogram equalization and show hist
 opencv_filtering : Do average smooth filtering(with nXn odd number mask from 1 to 9).<br>
 opencv_gaussian : Do Gaussian smooth filtering.<br>
 opencv_derivative : Do derivative filtering.<br>
-opencv_laplacian : Do laplacian filtering(make image more sharp).
+opencv_laplacian : Do laplacian filtering(make image more sharp).<br>
+opencv_chromakey : Do chroma key with foregorund and background iamge.
